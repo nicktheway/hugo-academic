@@ -3,7 +3,7 @@ $('.tab-content').children('.tab-pane').each(function(idx, item) {
   var navTabs = $(this).closest('.code-tabs').children('.nav-tabs'),
       title = $(this).attr('title');
   // console.log(tabs_depth);
-   navTabs.append('<li><a href="#">'+title+'</a></li');
+   navTabs.append('<li><a data-toggle="tab" href="#">'+title+'</a></li');
 
 });
 
